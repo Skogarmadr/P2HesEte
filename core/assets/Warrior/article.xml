@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+	<Attaque>	
+		<A1>
+		  <name>Wood Blade</name>
+		  <sprite>Articles/WoodBlade.png</sprite>
+		  <price>50</price>
+		  <status>open</status>
+		  <upgrade>0.2</upgrade>
+		  <type>attaque</type>
+		  <description>A</description>
+		</A1>
+		<A2>
+		  <name>Steel Blade</name>
+		  <sprite>Articles/SteelBlade.png</sprite>
+		  <price>100</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>attaque</type>
+		  <description>A</description>
+		</A2>
+		<A3>
+		  <name>Adamentium Blade</name>
+		  <sprite>Articles/AdamentiumBlade.png</sprite>
+		  <price>500</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>attaque</type>
+		  <description>A</description>
+		</A3>
+		<A4>
+		  <name>AntiMatter Blade</name>
+		  <sprite>Articles/AntiMatterBlade.png</sprite>
+		  <price>1000</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>attaque</type>
+		  <description>A</description>
+		</A4>
+	</Attaque>		
+	<Defense>	
+		<D1>
+		  <name>Coockie Armor</name>
+		  <sprite>Articles/CoockieArmor.png</sprite>
+		  <price>50</price>
+		  <status>open</status>
+		  <upgrade>0.2</upgrade>
+		  <type>defense</type>
+		  <description>AAAAA</description>
+		</D1>
+		<D2>
+		  <name>Steel Armor</name>
+		  <sprite>Articles/SteelArmor.png</sprite>
+		  <price>100</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>defense</type>
+		  <description>AAAAA</description>
+		</D2>
+		<D3>
+		  <name>Dragon Armor</name>
+		  <sprite>Articles/DragonArmor.png</sprite>
+		  <price>500</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>defense</type>
+		  <description>AAAAA</description>
+		</D3>
+		<D4>
+		  <name>Namek Armor</name>
+		  <sprite>Articles/NamekArmor.png</sprite>
+		  <price>1000</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>defense</type>
+		  <description>AAAAA</description>
+		</D4>
+	</Defense>
+	<Special>
+		<S1>
+		  <name>Bondage Training</name>
+		  <sprite>Articles/BondageSpecial.png</sprite>
+		  <price>50</price>
+		  <status>open</status>
+		  <upgrade>0.2</upgrade>
+		  <type>Time</type>
+		  <description>AAAAA</description>
+		</S1>
+		<S2>
+		  <name>LSD</name>
+		  <sprite>Articles/LSDSpecial.png</sprite>
+		  <price>100</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>Time</type>
+		  <description>AAAAA</description>
+		</S2>
+		<S3>
+		  <name>Child Ghost</name>
+		  <sprite>Articles/GhostSpecial.png</sprite>
+		  <price>500</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>Time</type>
+		  <description>AAAAA</description>
+		</S3>
+		<S4>
+		  <name>Meditation</name>
+		  <sprite>Articles/MeditationSpecial.png</sprite>
+		  <price>1000</price>
+		  <status>blocked</status>
+		  <upgrade>0.2</upgrade>
+		  <type>Time</type>
+		  <description>AAAAA</description>
+		</S4>
+	</Special>
+</articles>

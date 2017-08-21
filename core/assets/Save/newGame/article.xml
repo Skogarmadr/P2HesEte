@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<articles>
+	<Attaque>	
+		<A1>
+		  <status>open</status>
+		</A1>
+		<A2>
+		  <status>close</status>
+		</A2>
+		<A3>
+		  <status>close</status>
+		</A3>
+		<A4>
+		  <status>close</status>
+		</A4>
+	</Attaque>
+	<Defense>	
+		<D1>
+		  <status>open</status>
+		</D1>
+		<D2>
+		  <status>close</status>
+		</D2>
+		<D3>
+		  <status>close</status>
+		</D3>
+		<D4>
+		  <status>close</status>
+		</D4>
+	</Defense>
+	<Special>
+		<S1>
+		  <status>open</status>
+		</S1>
+		<S2>
+		  <status>close</status>
+		</S2>
+		<S3>
+		  <status>close</status>
+		</S3>
+		<S4>
+		  <status>close</status>
+		</S4>
+	</Special>
+</articles>

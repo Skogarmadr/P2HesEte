@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classePerso>
+	<Warrior>
+		<life>100</life>
+		<power>100</power>
+		<attD>20</attD>
+		<attS>2</attS>
+		<sprite>Warrior/Demo.png</sprite>
+	</Warrior>
+	<Mage>
+		<life>50</life>
+		<power>250</power>
+		<attD>50</attD>
+		<attS>1</attS>
+		<sprite>Mage/Demo.png</sprite>
+	</Mage>
+	<Hunter>
+		<life>80</life>
+		<power>180</power>
+		<attD>8</attD>
+		<attS>4</attS>
+		<sprite>Hunter/Demo.png</sprite>
+	</Hunter>
+</classePerso>

@@ -1,0 +1,16 @@
+<stats>
+	<isDead></isDead>
+	<iType></iType>
+	<strType></strType>
+	<iLife></iLife>
+	<iLifeMax></iLifeMax>
+	<iPower></iPower>
+	<iPowerMax></iPowerMax>
+	<iAttaque></iAttaque>
+	<flSpeedAtt></flSpeedAtt>
+	<iLevel></iLevel>
+	<iNewLevel></iNewLevel>
+	<iExp></iExp>
+	<iExpMax></iExpMax>
+	<iGold></iGold>
+</stats>

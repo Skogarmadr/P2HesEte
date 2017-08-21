@@ -1,0 +1,24 @@
+<Blob>
+	<Movement>
+		<Jump>
+			<Wait>
+				<x1>4</x1><y1>0</y1>
+				<x2>4</x2><y2>0</y2>
+			</Wait>
+			<WalkRight>
+				<x1>0</x1><y1>0</y1>
+				<x2>8</x2><y2>0</y2>
+			</WalkRight>
+			<WalkLeft>
+				<x1>0</x1><y1>0</y1>
+				<x2>8</x2><y2>0</y2>
+			</WalkLeft>
+			<NbCols>9</NbCols>
+			<NbRows>1</NbRows>
+		</Jump>
+	</Movement>
+	<Sprite>
+		<Width>32</Width>
+		<Height>32</Height>
+	</Sprite>
+</Blob>
