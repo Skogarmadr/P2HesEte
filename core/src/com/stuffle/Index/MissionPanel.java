@@ -13,8 +13,8 @@ public class MissionPanel extends IndexElement {
 	boolean blMissionChoose = false;
 	Mission missionChoose;
 	
-	public MissionPanel(int _x, int _y, boolean _show, String sprite) {
-		super(_x, _y, _show, sprite);
+	public MissionPanel(int _x, int _y,int _width,int _height, boolean _show, String sprite) {
+		super(_x, _y, _width, _height, _show, sprite);
 		lblTitle = new Label(rectPanel.x + rectPanel.width / 2, rectPanel.y + rectPanel.height - 40, "Quest", "Center",
 				Color.BLACK, 40);
 		createMission();
@@ -39,14 +39,15 @@ public class MissionPanel extends IndexElement {
 	}
 
 	public void render(SpriteBatch batch) {
+		super.render(batch);
 		if (isShown) {
 			update();
 			lblTitle.render(batch);
 			spritePanel.draw(batch);
 			for (Mission m : missions)
 				m.render(batch);
+			btnExit[0].render(batch);
 		}
-		super.render(batch);
 	}
 
 	private void createMission() {

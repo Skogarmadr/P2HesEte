@@ -24,7 +24,7 @@ public class Article {
 		strStatus = _status;
 		spriteTexture = _s;
 		spriteTexture.setSize(_w, _h);
-		spriteTexture.setPosition(_posX, _posY);
+		spriteTexture.setPosition(_posX, _posY + _h / 2);
 		changeStatus(_status);
 		strDescription = _description;
 	}

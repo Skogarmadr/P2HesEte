@@ -1,117 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <articles>
-	<Attaque>	
-		<A1>
-		  <name>Wood Blade</name>
-		  <sprite>Articles/WoodBlade.png</sprite>
-		  <price>50</price>
-		  <status>open</status>
-		  <upgrade>0.2</upgrade>
-		  <type>attaque</type>
-		  <description>A</description>
-		</A1>
-		<A2>
-		  <name>Steel Blade</name>
-		  <sprite>Articles/SteelBlade.png</sprite>
-		  <price>100</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>attaque</type>
-		  <description>A</description>
-		</A2>
-		<A3>
-		  <name>Adamentium Blade</name>
-		  <sprite>Articles/AdamentiumBlade.png</sprite>
-		  <price>500</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>attaque</type>
-		  <description>A</description>
-		</A3>
-		<A4>
-		  <name>AntiMatter Blade</name>
-		  <sprite>Articles/AntiMatterBlade.png</sprite>
-		  <price>1000</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>attaque</type>
-		  <description>A</description>
-		</A4>
-	</Attaque>		
-	<Defense>	
-		<D1>
-		  <name>Coockie Armor</name>
-		  <sprite>Articles/CoockieArmor.png</sprite>
-		  <price>50</price>
-		  <status>open</status>
-		  <upgrade>0.2</upgrade>
-		  <type>defense</type>
-		  <description>AAAAA</description>
-		</D1>
-		<D2>
-		  <name>Steel Armor</name>
-		  <sprite>Articles/SteelArmor.png</sprite>
-		  <price>100</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>defense</type>
-		  <description>AAAAA</description>
-		</D2>
-		<D3>
-		  <name>Dragon Armor</name>
-		  <sprite>Articles/DragonArmor.png</sprite>
-		  <price>500</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>defense</type>
-		  <description>AAAAA</description>
-		</D3>
-		<D4>
-		  <name>Namek Armor</name>
-		  <sprite>Articles/NamekArmor.png</sprite>
-		  <price>1000</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>defense</type>
-		  <description>AAAAA</description>
-		</D4>
-	</Defense>
-	<Special>
-		<S1>
-		  <name>Bondage Training</name>
-		  <sprite>Articles/BondageSpecial.png</sprite>
-		  <price>50</price>
-		  <status>open</status>
-		  <upgrade>0.2</upgrade>
-		  <type>Time</type>
-		  <description>AAAAA</description>
-		</S1>
-		<S2>
-		  <name>LSD</name>
-		  <sprite>Articles/LSDSpecial.png</sprite>
-		  <price>100</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>Time</type>
-		  <description>AAAAA</description>
-		</S2>
-		<S3>
-		  <name>Child Ghost</name>
-		  <sprite>Articles/GhostSpecial.png</sprite>
-		  <price>500</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>Time</type>
-		  <description>AAAAA</description>
-		</S3>
-		<S4>
-		  <name>Meditation</name>
-		  <sprite>Articles/MeditationSpecial.png</sprite>
-		  <price>1000</price>
-		  <status>blocked</status>
-		  <upgrade>0.2</upgrade>
-		  <type>Time</type>
-		  <description>AAAAA</description>
-		</S4>
-	</Special>
+      <Attaque>  
+           <A1>
+              <name>Wood Blade</name>
+              <sprite>Articles/Warrior/WoodBlade.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+              <description>This is the crapiest sword of the shop. Well ... It's still better than a wood stick who was stuck in a troll's ass.</description>
+            </A1>
+            <A2>
+              <name>Steel Blade</name>
+              <sprite>Articles/Warrior/SteelBlade.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+              <description>This steel sword doesn't look sharp at all. It is said that he just buys them at Wallmart.</description>
+            </A2>
+            <A3>
+              <name>Adamentium Blade</name>
+              <sprite>Articles/Warrior/AdamentiumBlade.png</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+			  <description>A sword made with the strongest metal in the world. Donald Trump wanted to build the wall with it but the mexicans can't pay for that much adamantium.</description>
+            </A3>
+            <A4>
+              <name>AntiMatter Blade</name>
+              <sprite>Articles/Warrior/AntiMatterBlade.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+              <description>It is said that you can wipe out any foes with this sword. Be careful not to get caught in the explosion though.</description>
+            </A4>
+      </Attaque>       
+      <Defense>  
+            <D1>
+              <name>Coockie Armor</name>
+              <sprite>Articles/Warrior/CoockieArmor.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.2</upgrade>
+              <type>defense</type>
+              <description>Really convenient if you feel like eating something during a fight. Be careful or you might eat all of it and fight naked afterwards.</description>
+            </D1>
+            <D2>
+              <name>Steel Armor</name>
+              <sprite>Articles/Warrior/SteelArmor.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>defense</type>
+              <description>A standard armor who does a good job of keeping you alive. Minus the fact that your butt is exposed for some reason...</description>
+            </D2>
+            <D3>
+              <name>Dragon Armor</name>
+              <sprite>Articles/Warrior/DragonArmor.png</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>defense</type>
+              <description>A armor made out of Dragon skin it is supposed to protect you from any source of damage. Only a true Dovahkiin can wear this precious armor.</description>          </D3>
+            <D4>
+              <name>Namek Armor</name>
+              <sprite>Articles/Warrior/NamekArmor.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>defense</type>
+              <description>A armor that comes from an other planet. It was created with the cosmic magic of the Dragon balls. Don't break it or Piccolo will be mad.</description>
+            </D4>
+      </Defense>
+      <Special>
+            <S1>
+              <name>Bondage Training</name>
+              <sprite>Articles/Warrior/BondageSpecial.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.2</upgrade>
+              <type>Time</type>
+              <description>After years of watching the BSDM category on YouPorn, you don't feel the pain the same as before.</description>
+            </S1>
+            <S2>
+              <name>LSD</name>
+              <sprite>Articles/Warrior/LSDSpecial.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>Time</type>
+              <description>Eating two tabs of LSD will make you ignore pain, but now you feel like god and you can bend time and space. weird ...</description>
+            </S2>
+            <S3>
+              <name>Child Ghost</name>
+              <sprite>Articles/Warrior/GhostSpecial.png</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>Time</type>
+              <description>One of the sacrificed children will come to help you and take damage for you. What a good lad!</description>
+            </S3>
+            <S4>
+              <name>Meditation</name>
+              <sprite>Articles/Warrior/MeditationSpecial.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>Time</type>
+              <description>After years of training with the Iron fist, you are now able to control your chi and avoid pain.</description>
+            </S4>
+      </Special>
 </articles>

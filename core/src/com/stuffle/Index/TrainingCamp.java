@@ -21,8 +21,8 @@ public class TrainingCamp extends IndexElement {
 	ArrayList<Bar> bars;
 	int nb = 4;
 
-	public TrainingCamp(int _x, int _y, boolean _show, String sprite) {
-		super(_x, _y, _show, sprite);
+	public TrainingCamp(int _x, int _y,int _width,int _height, boolean _show, String sprite) {
+		super(_x, _y, _width, _height, _show, sprite);
 		int w = 45, h = 45, padding = 50;
 		float VLayout = rectPanel.y + rectPanel.height / 2 + (padding) * nb / 2;
 		buttons = new Button[nb];
@@ -41,7 +41,7 @@ public class TrainingCamp extends IndexElement {
 			w = 650;
 			h = 30;
 			bars.add(new Bar(rectPanel.x + 450, VLayout - i * (padding), w, h, 5, PartStats.lUpgrades.get(i), 1, 1,
-					Color.WHITE, Color.RED));
+					Color.WHITE, Color.RED,false));
 		}
 	}
 	
@@ -53,6 +53,7 @@ public class TrainingCamp extends IndexElement {
 	}
 	@Override
 	public void render(SpriteBatch batch) {
+		super.render(batch);
 		if (isShown) {
 			update();
 			spritePanel.draw(batch);
@@ -64,8 +65,8 @@ public class TrainingCamp extends IndexElement {
 			for (Bar b : bars)
 				b.render(batch);
 			numberLevel.render(batch);
+			btnExit[0].render(batch);
 		}
-		super.render(batch);
 	}
 	
 	public void updateValues() {

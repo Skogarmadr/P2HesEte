@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+      <Attaque>  
+           <A1>
+              <name>Wood bow</name>
+              <sprite>Articles/WoodBow.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+              <description>A simple and tiny wood bow.</description>
+            </A1>
+            <A2>
+              <name>Elven bow</name>
+              <sprite>Articles/ElvenBow.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+              <description>This bow was crafted by an edgy Elv, it is beautiful yet not that powerfull ...</description>
+            </A2>
+            <A3>
+              <name>Bow of Legolas</name>
+              <sprite>Articles/LegoBow.png</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+			  <description>This bow was used by the legendary archer : Legolas. It is said that know that he touched the bow, no one can miss an arrow with it.</description>
+            </A3>
+            <A4>
+              <name>Skorm's bow</name>
+              <sprite>Articles/SkormBow.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+              <description>It is said that this bow belongs to Skorm the one who reigns in the shadows. A legend says that the bow appears in this realm everytime a mass catastroph happens.</description>
+            </A4>
+      </Attaque>       
+      <Defense>  
+            <D1>
+              <name>Leather armor</name>
+              <sprite>Articles/LeatherArmor.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.15</upgrade>
+              <type>defense</type>
+              <description>With this armor you can easily move around, but it doesnt do a really good job at keeping you alive though.</description>
+            </D1>
+            <D2>
+              <name>Elven armor</name>
+              <sprite>Articles/ElvenArmor.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.15</upgrade>
+              <type>defense</type>
+              <description>This armor is forged with Elven magic wich makes the metal really light. It will let you move freely while also protecting you a bit.</description>
+            </D2>
+            <D3>
+              <name>Rexxar's armor</name>
+              <sprite>Articles/RexxarArmor</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.15</upgrade>
+              <type>defense</type>
+              <description>This armor once belonged to the Rexxar, a famous hunter. He retired and sold it on ebay.</description>  
+			  </D3>
+            <D4>
+              <name>Thanatos armor</name>
+              <sprite>Articles/ThanatosArmor.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.15</upgrade>
+              <type>defense</type>
+              <description>This armor is full of darkness and evil powers. It is said that it once belonged to Thanatos himself.</description>
+            </D4>
+      </Defense>
+      <Special>
+            <S1>
+              <name>Blue Crystal</name>
+              <sprite>Articles/HeisenbergMeth.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.3</upgrade>
+              <type>Time</type>
+              <description>Don't do drugs kids, okay ? Even if it makes you shoot like a machine gun.</description>
+            </S1>
+            <S2>
+              <name>Legolas Training session</name>
+              <sprite>Articles/LSDSpecial.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.3</upgrade>
+              <type>Time</type>
+              <description>You follow the steps of the legendary archer and you are able to shoot faster.</description>
+            </S2>
+            <S3>
+              <name>My parents aren't home</name>
+              <sprite>Articles/Parents.png</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.3</upgrade>
+              <type>Time</type>
+              <description>Your girlfriend parents aren't home. You know you need to do everything you can to get there.</description>
+            </S3>
+            <S4>
+              <name>It's HIGH NOON</name>
+              <sprite>Articles/HighNoon.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.5</upgrade>
+              <type>Time</type>
+              <description>After training in the american wastelands you can now shoot quicker than your shadow.</description>
+            </S4>
+      </Special>
+</articles>

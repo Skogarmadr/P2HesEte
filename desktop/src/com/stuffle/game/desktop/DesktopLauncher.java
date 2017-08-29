@@ -20,6 +20,6 @@ public class DesktopLauncher {
 		Monitor currMonitor = Gdx.graphics.getMonitor();
 		
         DisplayMode displayMode = Gdx.graphics.getDisplayMode(currMonitor);
-        if(!Gdx.graphics.setFullscreenMode(displayMode)) {      }
+         //if(!Gdx.graphics.setFullscreenMode(displayMode)) {      }
 	}
 }

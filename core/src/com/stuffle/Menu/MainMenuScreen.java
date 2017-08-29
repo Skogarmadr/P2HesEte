@@ -6,7 +6,9 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Rectangle;
 import com.stuffle.Index.IndexScreen;
 import com.stuffle.Input.mouseInput;
@@ -14,6 +16,8 @@ import com.stuffle.Parameter.GameParameter;
 import com.stuffle.Parameter.LoadingState;
 import com.stuffle.Parameter.MenuState;
 import com.stuffle.Utils.Button;
+import com.stuffle.fx.AnimationState;
+import com.stuffle.fx.SpriteAnimation;
 import com.stuffle.game.StufflesGame;
 
 public class MainMenuScreen implements Screen
@@ -28,7 +32,9 @@ public class MainMenuScreen implements Screen
     private String[] textButton = {"Continue", "NewGame","Load","Exit"};
     private LoadingPanel loadingPanel;
     private MenuState menuState = MenuState.DEFAULT;
-    
+    private Sprite BackgroundStuffle;
+    private float timeBackgroundAnimation = 0f;
+    private SpriteAnimation animation;
     /*Screen of the main menu*/
     public MainMenuScreen(StufflesGame _game)
     {
@@ -42,7 +48,9 @@ public class MainMenuScreen implements Screen
         for(int i = 0; i < 4; i++)
         	buttons[i] = new Button(15,GameParameter.SCREEN_HEIGHT / 2 + layoutVertical / 2 - i * (height+vSeparator),
         			width,height,textButton[i],"Left",22);
-        	
+        BackgroundStuffle = new Sprite(new Texture(Gdx.files.internal("Menu/BackgroundMenu.png")));	
+        BackgroundStuffle.setX((GameParameter.SCREEN_WIDTH / 5)*3);
+        animation = new SpriteAnimation(5, 1, "Menu/BackgroundMenuSprite.png", (GameParameter.SCREEN_WIDTH / 5)*3, 0, 0.05f, AnimationState.WAITING);
         
     }
     
@@ -91,7 +99,7 @@ public class MainMenuScreen implements Screen
     {
     	Update();
     	
-        Gdx.gl.glClearColor(0.2f, 0.2f, 0.2f, 1);
+        Gdx.gl.glClearColor(0.6f, 0.6f, 0.3f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         
         camera.update();
@@ -109,7 +117,21 @@ public class MainMenuScreen implements Screen
         		break;
         }
         
-        
+        if(animation.eState == AnimationState.WAITING)
+        {
+        	BackgroundStuffle.draw(game.batch);
+        	
+        	timeBackgroundAnimation += Gdx.graphics.getDeltaTime();
+        	if(timeBackgroundAnimation >= 1)
+        	{
+	        	animation.start();
+	        	timeBackgroundAnimation = 0f;
+        	}
+        }
+        else
+        {
+        	animation.render(game.batch);
+        }
         game.batch.end();
         
     }

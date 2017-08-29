@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+      <Attaque>  
+           <A1>
+              <name>Wood Staff</name>
+              <sprite>Articles/WoodStaff.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.2</upgrade>
+              <type>attaque</type>
+              <description>A beautiful wood staff made from the famous Ygg-drasil, The Life tree.</description>
+            </A1>
+            <A2>
+              <name>Void Staff</name>
+              <sprite>Articles/VoidStaff.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.3</upgrade>
+              <type>attaque</type>
+              <description>A staff who was forged in the void. The power it contains are frightening.</description>
+            </A2>
+            <A3>
+              <name>Gao's Staff</name>
+              <sprite>Articles/GaosStaff.png</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.3</upgrade>
+              <type>attaque</type>
+			  <description>This staff apparently is the property of Madam Gao from the Marvel universe. It is full of Ancient oriental magic.</description>
+            </A3>
+            <A4>
+              <name>Staff of the Rising sun</name>
+              <sprite>Articles/RisingStaff.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.5</upgrade>
+              <type>attaque</type>
+              <description>This staff contains the energy of a Thousand stars. Tips : don't forget the sun screen while wielding it.</description>
+            </A4>
+      </Attaque>       
+      <Defense>  
+            <D1>
+              <name>Robe of Novice</name>
+              <sprite>Articles/NoviceRobe.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.1</upgrade>
+              <type>defense</type>
+              <description>A basic robe that all beginners mages should have back at home.</description>
+            </D1>
+            <D2>
+              <name>Nether Robe</name>
+              <sprite>Articles/NetherRobe.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.1</upgrade>
+              <type>defense</type>
+              <description>This robe comes from an other dimension. It is said that it will increase your magic powers .. and your appetite. Well, why not...</description>
+            </D2>
+            <D3>
+              <name>Dumbledore's Robe</name>
+              <sprite>Articles/DumbledoreRobe.png>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>defense</type>
+              <description>You're a Wizard Harry! No one knows why this robe is available at this shop but it's a good one.</description>
+            </D3>
+            <D4>
+              <name>Archmage's Robe</name>
+              <sprite>Articles/ArchmageRobe.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>defense</type>
+              <description>This Robe was given to the Archmages of the Winterhold Academy. It is said that you can handle all kinds of magic with it.</description>
+            </D4>
+      </Defense>
+      <Special>
+            <S1>
+              <name>Fart and Ignite</name>
+              <sprite>Articles/FartIgnite.png</sprite>
+              <price>50</price>
+              <status>open</status>
+              <upgrade>0.2</upgrade>
+              <type>Time</type>
+              <description>After years of training, you are able to control your farts and ignite them to burn down tons of enemies. TONS.</description>
+            </S1>
+            <S2>
+              <name>Book of Geb</name>
+              <sprite>Articles/GebBook.png</sprite>
+              <price>100</price>
+              <status>blocked</status>
+              <upgrade>0.2</upgrade>
+              <type>Time</type>
+              <description>The ancient egyptian god beholds a ancestral spell capable of destroying all enemies around you.</description>
+            </S2>
+            <S3>
+              <name>Reality distortion</name>
+              <sprite>Articles/RealityDistortion.png</sprite>
+              <price>500</price>
+              <status>blocked</status>
+              <upgrade>0.3</upgrade>
+              <type>Time</type>
+              <description>Neo's training made you able to bend the reality of the matrice in such ways that you can wipe out entire groups of enemies.</description>
+            </S3>
+            <S4>
+              <name>Pyroblast</name>
+              <sprite>Articles/Pyroblast.png</sprite>
+              <price>1000</price>
+              <status>blocked</status>
+              <upgrade>0.5</upgrade>
+              <type>Time</type>
+              <description>The famous spell of Antonidas, After ignoring you for a whole year he decided to teach it to you.</description>
+            </S4>
+      </Special>
+</articles>

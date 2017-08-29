@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><stats>
+	<isDead>false</isDead>
+	<iType>0</iType>
+	<strType>Warrior</strType>
+	<iLife>100</iLife>
+	<iLifeMax>100</iLifeMax>
+	<iPower>100</iPower>
+	<iPowerMax>100</iPowerMax>
+	<iAttaque>20</iAttaque>
+	<flSpeedAtt>2.0</flSpeedAtt>
+	<iLevel>12</iLevel>
+	<iNewLevel>3</iNewLevel>
+	<iExp>14</iExp>
+	<iExpMax>100</iExpMax>
+	<iGold>2086</iGold>
+</stats>

@@ -43,9 +43,9 @@ public class PlayerUid {
 	
 	private void initialisation()
 	{
-		barLife = new Bar(rectPanel.x + rectPanel.width * 14/40, rectPanel.y + rectPanel.height - 30, rectPanel.width * 23/40, 20, PartStats.iLifeMax,PartStats.iLife,1,1,Color.WHITE, Color.RED);
-		barPower = new Bar(rectPanel.x + rectPanel.width * 14/40,  rectPanel.y + rectPanel.height - 45, rectPanel.width * 23/40, 20, PartStats.iPowerMax,PartStats.iPower,1,1,Color.WHITE, Color.BLUE);
-		barExp = new Bar(rectPanel.x + rectPanel.width * 14/40,  rectPanel.y + 15, rectPanel.width * 23/40, 5, PartStats.iExpMax,PartStats.iExp,1,1,Color.WHITE, Color.VIOLET);
+		barLife = new Bar(rectPanel.x + rectPanel.width * 14/40, rectPanel.y + rectPanel.height - 30, rectPanel.width * 23/40, 20, PartStats.iLifeMax,PartStats.iLife,1,1,Color.WHITE, Color.RED,false);
+		barPower = new Bar(rectPanel.x + rectPanel.width * 14/40,  rectPanel.y + rectPanel.height - 45, rectPanel.width * 23/40, 20, PartStats.iPowerMax,PartStats.iPower,1,1,Color.WHITE, Color.BLUE,false);
+		barExp = new Bar(rectPanel.x + rectPanel.width * 14/40,  rectPanel.y + 15, rectPanel.width * 23/40, 5, PartStats.iExpMax,PartStats.iExp,1,1,Color.WHITE, Color.VIOLET,false);
 		int w = 20, h = 20;
 		spriteGold = new Sprite(new Texture(Gdx.files.internal("Coin.png")));
 		spriteGold.setSize(w, h);

@@ -22,8 +22,8 @@ public class Market extends IndexElement {
 	private Label articleTitle;
 	private PlayerUid pUid;
 
-	public Market(int _x, int _y, boolean _show, String sprite, PlayerUid _pUid) {
-		super(_x, _y, _show, sprite);
+	public Market(int _x, int _y,int _width,int _height, boolean _show, String sprite, PlayerUid _pUid) {
+		super(_x, _y,_width,_height, _show, sprite);
 		pUid = _pUid;
 		articles = new ArrayList<ArrayList<Article>>();
 		int w = 300, h = 300;
@@ -53,6 +53,7 @@ public class Market extends IndexElement {
 	}
 
 	public void render(SpriteBatch batch) {
+		super.render(batch);
 		if (isShown) {
 			update();
 			spritePanel.draw(batch);
@@ -61,8 +62,8 @@ public class Market extends IndexElement {
 					a.render(batch);
 			articleTitle.render(batch);
 			textArea.render(batch);
+			btnExit[0].render(batch);
 		}
-		super.render(batch);
 	}
 
 	private void createArticles() {

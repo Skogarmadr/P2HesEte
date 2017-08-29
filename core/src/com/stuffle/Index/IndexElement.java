@@ -21,14 +21,14 @@ public abstract class IndexElement {
 	protected Rectangle rectPanel;
 	protected Sprite spritePanel;
 	protected Color colorPanel;
-	private Button[] buttons;
+	protected Button[] btnExit;
 
-	public IndexElement(int _x, int _y, boolean _show, String sprite) {
+	public IndexElement(int _x, int _y, int width, int height, boolean _show, String sprite) {
 		iX = _x;
 		iY = _y;
 		isShown = _show;
 
-		rectElement = new Rectangle(_x, 60, 60, 60);
+		rectElement = new Rectangle(_x, _y, width, height);
 
 		spriteElement = new Sprite(new Texture(Gdx.files.internal(sprite)));
 		initialisation();
@@ -36,25 +36,23 @@ public abstract class IndexElement {
 
 	protected void update() {
 		if (isShown) {
-			if (mouseInput.buttons_Listener(buttons, 0) != -1) {
-				btn_Clicked(mouseInput.buttons_Listener(buttons, 0));
+			if (mouseInput.buttons_Listener(btnExit, 0) != -1) {
+				btn_Clicked(mouseInput.buttons_Listener(btnExit, 0));
 			}
-			btn_Hover(mouseInput.buttons_Listener(buttons, 1));
-			btn_Was_Hover(mouseInput.buttons_Listener(buttons, 2));
+			btn_Hover(mouseInput.buttons_Listener(btnExit, 1));
+			btn_Was_Hover(mouseInput.buttons_Listener(btnExit, 2));
 		}
 	}
 
 	protected void render(SpriteBatch batch) {
 		spriteElement.draw(batch);
-		if (isShown)
-			buttons[0].render(batch);
 	}
 
 	protected void initialisation() {
 
 		spriteElement.setSize(rectElement.width, rectElement.height);
 		spriteElement.setPosition(rectElement.x, rectElement.y);
-		changeColor(80 / 255f, 80 / 255f, 80 / 255f, 1, spriteElement);
+		changeColor(255 / 255f, 255 / 255f, 255 / 255f, 1, spriteElement);
 
 		int w = 1200, h = 850;
 		rectPanel = new Rectangle(GameParameter.SCREEN_WIDTH / 2 - w / 2, GameParameter.SCREEN_HEIGHT / 2 - h / 2, w,
@@ -63,11 +61,11 @@ public abstract class IndexElement {
 		spritePanel = new Sprite(new Texture(Gdx.files.internal("Index/IndexElementBack.png")));
 		spritePanel.setBounds(rectPanel.x, rectPanel.y, rectPanel.width, rectPanel.height);
 		changeColor(255 / 255f, 255 / 255f, 255 / 255f, 92 / 100f, spritePanel);
-		buttons = new Button[1];
+		btnExit = new Button[1];
 		w = 300;
 		h = 75;
-		Button btnExit = new Button(rectPanel.x + rectPanel.width / 2 - w / 2, rectPanel.y + 100, w, h, "Close", 30);
-		buttons[0] = btnExit;
+		Button exit = new Button(rectPanel.x + rectPanel.width / 2 - w / 2, rectPanel.y + 100, w, h, "Close", 30);
+		btnExit[0] = exit;
 	}
 
 	protected void changeColor(float r, float g, float b, float a, Sprite sprite) {
@@ -84,13 +82,13 @@ public abstract class IndexElement {
 
 	private void btn_Hover(int index) {
 		if (index >= 0) {
-			buttons[index].changeBackColor(Color.BROWN);
+			btnExit[index].changeBackColor(Color.BROWN);
 		}
 	}
 
 	private void btn_Was_Hover(int index) {
 		if (index >= 0) {
-			buttons[index].changeBackColor(Color.WHITE);
+			btnExit[index].changeBackColor(Color.WHITE);
 		}
 	}
 

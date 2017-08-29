@@ -31,9 +31,6 @@ import com.stuffle.uid.PlayerUid;
 public class IndexScreen implements Screen {
 
 	
-	private TrainingCamp camp;
-	private Market market;
-	private MissionPanel mission;
 	
 	//Array of element like the market, the training camp, etc...
 	private IndexElement[] elements;
@@ -173,8 +170,10 @@ public class IndexScreen implements Screen {
 					PartStats.iLevel++;
 					PartStats.iNewLevel++;
 				}
+				saveStats();
+				loadPart();
 				display_Index();
-				save();
+				load();
 			}
 			else
 			{
@@ -236,9 +235,9 @@ public class IndexScreen implements Screen {
 		bossCastle = new BossCastle();
 		pUid = new PlayerUid(new Rectangle(20, 900, 375, 125));
 		elements = new IndexElement[3];
-		elements[0] = new TrainingCamp(0, 0, false, "pixel.png");
-		elements[1] = new Market(100, 30, false, "pixel.png", pUid);
-		elements[2] = new MissionPanel(200, 40, false, "pixel.png");
+		elements[0] = new TrainingCamp(1600, 95,200,250, false, "Index/TrainingCamp.png");
+		elements[1] = new Market(1450, 65,124,124,  false, "Index/Market.png", pUid);
+		elements[2] = new MissionPanel(1800, 65,110,110, false, "Index/MissionPanel.png");
 
 	}
 
@@ -296,6 +295,11 @@ public class IndexScreen implements Screen {
 		save.upgradeWriter();
 
 	}
+	
+	private void saveStats(){
+		Save save = new Save();
+		save.partWriter();
+	}
 
 	private void loadPart() {
 		Load load = new Load();
@@ -303,9 +307,10 @@ public class IndexScreen implements Screen {
 	}
 
 	private void load() {
+			
 		Load load = new Load();
 		load.loadPart();
-
+		
 		Market m = (Market) (elements[1]);
 		m.articles = load.loadArticle(m.articles);
 
@@ -343,7 +348,7 @@ public class IndexScreen implements Screen {
 
 	private void elements_Was_Hover(int index) {
 		elements[index].mouseHover = false;
-		elements[index].changeColor(80 / 255f, 80 / 255f, 80 / 255f, 1, elements[index].spriteElement);
+		elements[index].changeColor(255 / 255f, 255 / 255f, 255 / 255f, 1, elements[index].spriteElement);
 	}
 
 	@Override
